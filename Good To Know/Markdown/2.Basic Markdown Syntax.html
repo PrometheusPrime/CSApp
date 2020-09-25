@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formating Text in Markdown</title>
+  <link rel="stylesheet" href="../../Styles/prettify-small/google-code-prettify/prettify.css" />
+  <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+  <style>
+    pre>h1,
+    pre>h2,
+    pre>h3,
+    pre>h4,
+    pre>h5,
+    pre>h6 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      display: inline;
+    }
+
+    .output {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body onload="PR.prettyPrint()">
+  <h1>Formating Text in Markdown</h1>
+  <h3>Headings </h3>
+  <hr>
+  <p>
+    Like <abbr title="HyperText Markup Language">HTML</abbr>, Markdown supports 6 heading
+    levels. To create a heading, place hash sign(s) before your heading. The number of hashes placed before the heading
+    determines the header level of the heading (one for header level 1(most impoortant heading), six for header level 6
+    (least important heading)).
+  <pre class="codeBlock">
+ # Some Heading(h1)#
+ ## Some Heading(h2)##
+ ### Some Heading(h3)
+ #### Some Heading(h4)###
+ ##### Some Heading(h5)
+ ###### Some Heading(h6)#
+</pre>
+  closing hashes are optional, they don't even have to match the opening hashes ...<br />
+  <p class="output">Output</p>
+  <pre class="code">
+  <h1 style="font-size:1.7rem;">Some Heading(h1)</h1>
+  <h2 style="font-size:1.5rem;">Some Heading(h2)</h2>
+  <h3 style="font-size:1.3rem;">Some Heading(h3)</h3>
+  <h4 style="font-size:1rem;">Some Heading(h4)</h4>
+  <h5 style="font-size:0.9rem;">Some Heading(h5)</h5>
+  <h6 style="font-size:0.75rem;">Some Heading(h6)</h6>
+</pre>
+  Alternatively,placing any number of <em> Equal Signs (=)</em> or <em>Hyphens (-)</em> on the line below any text, will
+  turn it into a header level 1 heading and header level 2 heading respectively.
+  <pre class="codeBlock">
+  Some Heading(h1)
+  ================
+  Some Heading(h2)
+  -----------------
+</pre>
+  <p class="output">Output</p>
+  <pre class="code">
+<h1 style="font-size:1.7rem;">Some Heading(h1)</h1>
+<h2 style="font-size:1.5rem;">Some Heading(h2)</h2>
+</pre>
+  </p>
+  <h3>Paragraphs</h3>
+  <hr>
+  <p>
+    To write a Paragraph, type the lines of text without identing and separate the Paragraph with one or more Blank
+    lines.
+  <pre class="codeBlock prettyPrint">This is a Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod maiores<br/>consequatur!
+
+This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod  <br/>maiores consequatur!
+    </pre>
+  <p class="output">Output</p>
+  <pre class="code">This is a Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod maiores<br/>consequatur!
+
+This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod  <br/>maiores consequatur!
+    </pre>
+  To add a <em>Line Break</em>,end a line of text with two or more spaces, then type <kbd>return</kbd>.
+  </p>
+  <h3>Italic and Bold Text</h3>
+  <hr>
+  <p>
+    Text between two asterisks or underscores will be Italicised...<pre class="codeBlock">
+  *Italic* text
+  _Italic_ text
+</pre>
+<p class="output">Output</p>
+<pre class="code">
+  <em>Italic</em> text
+  <em>Italic</em> text
+</pre>
+  </p>
+  <p>
+    Text between four asterisks or underscores will be Bold...<pre class="codeBlock">
+  **Bold** text
+  __Bold__ text
+</pre>
+<p class="output">Output</p>
+<pre class="code">
+  <b>Bold</b> text
+  <b>Bold</b> text
+</pre>
+  </p>
+  <p>
+    Make Bold Ttalic text as follows...<pre class="codeBlock">
+  ***Italicised Bold*** text
+  **_Italicised Bold_** text 
+  ___Italicised Bold___ text
+  __*Italicised Bold*__ text
+</pre>
+<p class="output">Output</p>
+<pre class="code">
+  <b><em>Italicised Bold</em></b> text
+  <b><em>Italicised Bold</em></b> text
+  <b><em>Italicised Bold</em></b> text
+  <b><em>Italicised Bold</em></b> text
+  
+</pre>
+  </p>
+  <h3>Strikethrough</h3>
+  <hr/>
+  <p>
+    Text between four tilde(~~~~) wll be shown with a Strikethrough ...<pre class="codeBlock">The Earth is ~~Flat~~ Round</pre>
+    <p class="output">Output</p>
+    <code class="code">The Earth is <s>Flat</s> Round</code>
+  </p>
+  <h3>Lists</h3>
+  <hr/>
+  <p>
+    To create <em>Unordered List</em>,use either asterisks(*), pluses(+) or hyphens(-) as list item markers. Add a space
+    after the list item markers then the list item name...
+  <pre class="codeBlock">
+  * Monday
+  * Tuesday
+  * Wensday
+
+  + Monday
+  + Tuesday
+  + Wensday
+
+  - Monday
+  - Tuesday
+  - Wensday
+</pre>
+  <p class="output">Output</p>
+  <div class="code">
+    <ul style=" list-style-type:disc;">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ul>
+    <ul style=" list-style-type:disc;">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ul>
+    <ul style=" list-style-type:disc;">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ul>
+  </div>
+  </p>
+  <p>
+    To create an <em>Ordered List</em>, use numbers followed by a period as list item markers.Add a space after a period
+    then the list item . The numbers don't have to be in numerical order, but they should start with one.
+  <pre class="codeBlock">
+  1. Monday
+  2. Tuesday
+  3. Wensday
+  
+  1. Monday
+  1. Tuesday
+  1. Wensday
+  
+  1. Monday
+  5. Tuesday
+  50. Wensday
+</pre>
+  <p class="output">Output</p>
+  <div class="code">
+    <ol>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ol>
+    <ol>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ol>
+    <ol>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wensday</li>
+    </ol>
+  </div>
+  </p>
+  <p> lists can be Nested as follows ...
+  <pre class="codeBlock">
+ * Galaxies
+ <span class="com">&lt;!-- Nested List --></span>
+    * Andromeda Galaxy
+    * Whirlpool Galaxy
+    * Magellanic Cloud Galaxy
+ * Nebulae
+   <span class="com">&lt;!-- Nested List --></span>
+    1. Eagle Nebula
+    1. Orion Nebula
+    1. Rosette Nebula
+    1. Cat's Eye Nebula
+</pre>
+  <p class="output">Output</p>
+  <div class="code">
+    <ul style=" list-style-type:disc;">
+      <li>Galaxies<ul style=" list-style-type:disc;">
+          <li>Andromeda Galaxy</li>
+          <li>Whirlpool Galaxy</li>
+          <li>Magellanic Cloud Galaxy</li>
+        </ul>
+      </li>
+      <li>Nebulae
+        <ol>
+          <li>Eagle Nebula</li>
+          <li>Orion Nebula</li>
+          <li>Rosette Nebula</li>
+          <li>Cat's Eye Nebula</li>
+        </ol>
+      </li>
+    </ul>
+    <ol>
+  </div>
+  <h3>Block Quote</h3>
+  <hr/>
+  <p>
+    Use the <em>Greater Than Signs (>)</em> to create a Block Quote...
+<pre class="codeBlock">
+> The nail that sticks out must be hammered down
+
+> If you think Communication is all Talk,<br/>> you haven't been Listerning
+> Ashleigh Brilliant
+</pre>
+    <p class="output">Output</p>
+<div class="code" style="padding:0px ;margin: 0;">
+<blockquote style="margin:0p;">
+  <p style="text-indent: 0px;">The nail that sticks out must be hammered down</p>
+  <p style="text-indent: 0px;">If you think Communication is all Talk,<br/>you haven't been Listerning<br/>Ashleigh Brilliant</p>
+</blockquote></div>
+<!-- Nested blockquotes -->
+<p>Nested blockquotes</p>
+  </p>
+  <h3>Code Blocks</h3>
+  <hr/>
+  <h3>Links</h3>
+  <hr/>
+  <h3>Images</h3>
+  <hr/>
+  <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To HTML</title>
+    <link rel="stylesheet" href="../Styles/prettify-small/google-code-prettify/prettify.css">
+    <link rel="stylesheet" href="../Styles/CustomStyles.css">
+</head>
+
+<body onload="PR.prettyPrint()">
+    <h1>HTML</h1>
+    <p>
+        <strong>HTML</strong> <em>(HyperText Markup Language)</em> is used to create web pages. HTML is not a Programming Language, it is a Markup Language which uses Tags to discribe how content should be rendered by a program( like a Browser).
+    </p>
+    <p>
+        <strong>Tags</strong> usually come in Opening and Closing Tag pairs with the content in the middle.Tag names are surrounded by angle brackets, the Closing Tag has a forward slash before the tag name.<br/><br/>
+        <code class="code prettyprint">&lt;OpeningTag&gt; Content &lt;/ClosingTag&gt;</code>
+    </p>
+    <p>
+        <strong>HTML Element</strong> are made up of the Opening Tag ,Content and Closing Tag. Empty Elements do not have Closing Tags. Elements are either Block Level Elements (displayed with line breaks) or Inline Elements( displayed without line breaks).
+    </p>
+    <p>
+        HTML Documents can be created using  a simple Text Editor, save the file with either <em>.htm</em> or <em>.html</em> as the file extention. When saving the file, if the Text Editor you're using has an option to set character encoding, set it to UTF-8.
+    </p>
+    <h2>Sample Code</h2>
+    <pre class="codeBlock prettyprint ">  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Hello HTML&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;!-- Some Comment --&gt;
+  Hello There !!
+ &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <p>Copy and Paste the code above into your Text Editor. In the example the file is named as <em>Hello.html</em> , you can call it whatever you wish and then save it...</p>
+    <img src="images/hiThereEditorScreenshot.png"/>
+    <p>Go to the location where you saved the file and double click it to open it ...</p>
+    <img src="images/filex.png"/>
+    <p>The file will open in your default Browser...</p>
+<img src="images/hiThereBrowserScreenshot.png"/>
+<h2>Sample Code Simplified</h2>
+<p>
+    <code class="code prettyprint ">&lt;!DOCTYPE html&gt; </code> : Browsers can open different types of documents (like pdf et cetra). This declaration tells the  browser that the Document type is HTML (and the version of HTML used), so that the document can be rendered correctly.
+</p>
+<p>
+    <code class="code prettyprint ">&lt;html&gt;&lt;/html&gt; </code> : Marks the beginning and end of the HTML Document, anything outside these tags isn't part of the document.
+</p>
+<p>
+    <code class="code prettyprint ">&lt;head&gt;&lt;/head&gt; </code> : The head's content is not display on the page, they provides more information about the document which is important to search engines and browsers.
+    Head also contains links to other resources (CSS, Javascript etc). More on this later.
+</p>
+<p>
+    <code class="code prettyprint ">&lt;title&gt;&lt;/title&gt; </code> : Contains the title of the document which is shown in the browser's title bar or the page's tab, not on the page.
+</p>
+<p>
+   <code class="code prettyprint ">&lt;body&gt;&lt;/body&gt;</code> : All visible content ( text, images, video, links et cetra) on the web page is contained in the body tags.
+</p>
+<p>
+    <code class="code prettyprint "> &lt;!--  --&gt;</code> : Anything placed between these tags is a comment. Comments are not displayed by the Browser,they are mainly used to document the HTML Document. Note the exclamation point (!) in the opening, but not in the closing tag.
+</p>
+<!-- add tips-->
+<p class="tip">
+While a simple text editor that comes with your operating system will suffice, other great options include Sublime text, Atom and Visual Studio Code..<br/>You can follow along the tutorial on mobile, search in your OS's app store for any text editor...<br/>Don't forget to save your file with <em>.htm</em> or <em>.html</em> as the file extension...
+</p>
+    <script type="text/javascript" src="../Styles/prettify-small/google-code-prettify/prettify.js"></script>
+</body>
+</html>
