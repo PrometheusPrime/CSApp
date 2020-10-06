@@ -43,7 +43,7 @@
  ##### Some Heading(h5)
  ###### Some Heading(h6)#
 </pre>
-  closing hashes are optional, they don't even have to match the opening hashes ...<br />
+  closing hashes are optional, they don't even have to be equal to the number of opening hashes ...<br />
   <p class="output">Output</p>
   <pre class="code">
   <h1 style="font-size:1.7rem;">Some Heading(h1)</h1>
@@ -77,61 +77,51 @@
 This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod  <br/>maiores consequatur!
     </pre>
   <p class="output">Output</p>
-  <pre class="code">This is a Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod maiores<br/>consequatur!
-
-This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>sapiente debitis fuga corrupti doloribus repellendus, impedit, amet ipsa <br/>facilis unde facere itaque expedita distinctio officiis atque quod  <br/>maiores consequatur!
-    </pre>
+  <img src="images/Paragraph.png">
+  <h3>Line Break</h3>
   To add a <em>Line Break</em>,end a line of text with two or more spaces, then type <kbd>return</kbd>.
   </p>
   <h3>Italic and Bold Text</h3>
   <hr>
   <p>
-    Text between two asterisks or underscores will be Italicised...<pre class="codeBlock">
+    Text between two asterisks or underscores will be Italicised...
+  <pre class="codeBlock">
   *Italic* text
   _Italic_ text
 </pre>
-<p class="output">Output</p>
-<pre class="code">
-  <em>Italic</em> text
-  <em>Italic</em> text
-</pre>
+  <p class="output">Output</p>
+  <img src="images/ItalicText.png">
   </p>
   <p>
-    Text between four asterisks or underscores will be Bold...<pre class="codeBlock">
+    Text between four asterisks or underscores will be Bold...
+  <pre class="codeBlock">
   **Bold** text
   __Bold__ text
 </pre>
-<p class="output">Output</p>
-<pre class="code">
-  <b>Bold</b> text
-  <b>Bold</b> text
-</pre>
+  <p class="output">Output</p>
+  <img src="images/BoldText.png">
   </p>
   <p>
-    Make Bold Ttalic text as follows...<pre class="codeBlock">
+    Make Bold Ttalic text as follows...
+  <pre class="codeBlock">
   ***Italicised Bold*** text
   **_Italicised Bold_** text 
   ___Italicised Bold___ text
   __*Italicised Bold*__ text
 </pre>
-<p class="output">Output</p>
-<pre class="code">
-  <b><em>Italicised Bold</em></b> text
-  <b><em>Italicised Bold</em></b> text
-  <b><em>Italicised Bold</em></b> text
-  <b><em>Italicised Bold</em></b> text
-  
-</pre>
+  <p class="output">Output</p>
+<img src="images/ItalicisedBoldText.png">
   </p>
   <h3>Strikethrough</h3>
-  <hr/>
+  <hr />
   <p>
-    Text between four tilde(~~~~) wll be shown with a Strikethrough ...<pre class="codeBlock">The Earth is ~~Flat~~ Round</pre>
-    <p class="output">Output</p>
-    <code class="code">The Earth is <s>Flat</s> Round</code>
+    Text between four tilde(~~~~) wll be shown with a Strikethrough ...
+  <pre class="codeBlock">The Earth is ~~Flat~~ Round</pre>
+  <p class="output">Output</p>
+  <code class="code">The Earth is <s>Flat</s> Round</code>
   </p>
   <h3>Lists</h3>
-  <hr/>
+  <hr />
   <p>
     To create <em>Unordered List</em>,use either asterisks(*), pluses(+) or hyphens(-) as list item markers. Add a space
     after the list item markers then the list item name...
@@ -149,23 +139,7 @@ This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>
   - Wensday
 </pre>
   <p class="output">Output</p>
-  <div class="code">
-    <ul style=" list-style-type:disc;">
-      <li>Monday</li>
-      <li>Tuesday</li>
-      <li>Wensday</li>
-    </ul>
-    <ul style=" list-style-type:disc;">
-      <li>Monday</li>
-      <li>Tuesday</li>
-      <li>Wensday</li>
-    </ul>
-    <ul style=" list-style-type:disc;">
-      <li>Monday</li>
-      <li>Tuesday</li>
-      <li>Wensday</li>
-    </ul>
-  </div>
+  <img src="images/UnorderedList.png">
   </p>
   <p>
     To create an <em>Ordered List</em>, use numbers followed by a period as list item markers.Add a space after a period
@@ -205,62 +179,64 @@ This is another Paragraph amet consectetur adipisicing elit. Et dignissimos<br/>
   <p> lists can be Nested as follows ...
   <pre class="codeBlock">
  * Galaxies
- <span class="com">&lt;!-- Nested List --></span>
     * Andromeda Galaxy
     * Whirlpool Galaxy
     * Magellanic Cloud Galaxy
  * Nebulae
-   <span class="com">&lt;!-- Nested List --></span>
     1. Eagle Nebula
     1. Orion Nebula
     1. Rosette Nebula
     1. Cat's Eye Nebula
 </pre>
   <p class="output">Output</p>
-  <div class="code">
-    <ul style=" list-style-type:disc;">
-      <li>Galaxies<ul style=" list-style-type:disc;">
-          <li>Andromeda Galaxy</li>
-          <li>Whirlpool Galaxy</li>
-          <li>Magellanic Cloud Galaxy</li>
-        </ul>
-      </li>
-      <li>Nebulae
-        <ol>
-          <li>Eagle Nebula</li>
-          <li>Orion Nebula</li>
-          <li>Rosette Nebula</li>
-          <li>Cat's Eye Nebula</li>
-        </ol>
-      </li>
-    </ul>
-    <ol>
-  </div>
+  <img src="images/NestedList.png" alt="Nested List">
   <h3>Block Quote</h3>
-  <hr/>
+  <hr />
   <p>
     Use the <em>Greater Than Signs (>)</em> to create a Block Quote...
-<pre class="codeBlock">
+  <pre class="codeBlock">
 > The nail that sticks out must be hammered down
 
 > If you think Communication is all Talk,<br/>> you haven't been Listerning
 > Ashleigh Brilliant
 </pre>
-    <p class="output">Output</p>
-<div class="code" style="padding:0px ;margin: 0;">
-<blockquote style="margin:0p;">
-  <p style="text-indent: 0px;">The nail that sticks out must be hammered down</p>
-  <p style="text-indent: 0px;">If you think Communication is all Talk,<br/>you haven't been Listerning<br/>Ashleigh Brilliant</p>
-</blockquote></div>
-<!-- Nested blockquotes -->
-<p>Nested blockquotes</p>
+  <p class="output">Output</p>
+<img src="images/BlockQuotes.png">
+  <!-- Nested blockquotes -->
+  <p>Nested blockquotes</p>
+  <pre class="codeBlock">
+>We are not only our brother's keeper;  
+>in countless large and small ways,  
+>we are our brother's maker.  
+>Bonaro Overstreet  
+>>I am not what I think I am.  
+>>I am not what you think I am.  
+>>I am what I think You think I am.  
+>>Aaron Bleiberg and Harry Leubling
+</pre>
   </p>
+  <p class="output">Output</p>
+  <img src="images/NestedBlockQuotes.png" alt="Nested BlockQuotes">
   <h3>Code Blocks</h3>
-  <hr/>
+  <hr />
+  <p>
+    Use back ticks(``) to display an Inline Code Block
+  <pre class="codeBlock">`Foo();`</pre>
+  <p class="output">Output</p>
+  <!-- <img src="images/"> -->
+  <code class="code">Foo();</code>
+  </p>
+  <p>
+    Use back ticks(``) to display an Inline Code Block
+  <pre class="codeBlock">`Foo();`</pre>
+  <p class="output">Output</p>
+  <code class="code">Foo();</code>
+  </p>
   <h3>Links</h3>
-  <hr/>
+  <hr />
+  <p></p>
   <h3>Images</h3>
-  <hr/>
+  <hr />
   <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js">
   </script>
 </body>

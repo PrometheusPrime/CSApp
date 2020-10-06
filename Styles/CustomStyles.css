@@ -28,10 +28,10 @@ hr {
   max-width: 80%;
 }
 .codeBlock {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
   font-family: Consolas, "courier new";
   font-size: 1rem;
-  border-left: 5px solid #004d40 !important;
+  border-left: 4px solid #004d40 !important;
   width: auto;
   overflow: auto;
   text-align: left;
@@ -73,9 +73,3 @@ img {
   }
 }
 /*add media queries for Tablets*/
-/*add media queries Desktop*/
-@media Screen and (min-width: 760px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
