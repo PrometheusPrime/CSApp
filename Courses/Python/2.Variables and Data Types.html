@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variables and Data Types</title>
+  <link rel="stylesheet" href="../../Styles/prettify-small/google-code-prettify/prettify.css" />
+  <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+</head>
+
+<body onload="PR.prettyPrint()">
+  <h2>Variables</h2>
+  <p><strong>Variables</strong> are used to store data in computer memory reasign a variable to a value of a different Data Type</p>
+  <h2>Primitive Data Types</h2>
+  <p>
+    <strong>Primitive Data Types</strong> are predefined types of data. They are the most basic data types provided by a Programming Language. Python has four Primitive Data Types : <em> Integers , Floats , Boolean, Strings.</em>
+  </p>
+  <p>
+    <strong>Integers</strong> are negative or positive whole numbers ...
+  <pre class="codeBlock prettyprint">
+# integers
+student_age = 16
+</pre>
+  </p>
+  <p>
+    <strong>Floating Point (Floats) </strong> are Real Numbers with a Decimal Point..
+  <pre class="codeBlock prettyprint">
+# a float
+student_height = 6.24
+</pre>
+  </p>
+  <p>
+    <strong>Boolean</strong> variables can have either True or False as values..
+  <pre class="codeBlock prettyprint">
+# boolean
+is_raining = True
+is_sunny = False
+</pre>
+  note the values start with capital letters.
+  </p>
+  <p>
+    <strong>Strings</strong> are a sequence of Characters.In Python, strings are delimited by either Single quotes('') or
+    Double quotes("").
+  <pre class="codeBlock prettyprint">
+# single quotes
+a_string ='spam'
+print(a_string)
+# double quotes
+another_string ="eggs"
+print(another_string)
+</pre>
+  To display a string with quotes, use \ to escape quotes (or any special Characters). Alternatively to display double
+  quotes, use single quotes as delimiters and vice versa.
+  </p>
+  <h2>Type Conversion</h2>
+  <p>
+    <pre class="codeBlock prettyprint">
+student_age = 16
+print("before converting")
+print(student_age)
+print(type(student_age))
+      
+# from integer to float
+print("after converting")
+student_age = float(student_age)
+print(student_age)
+print(type(student_age))
+</pre>
+  </p>
+  <p>
+    <pre class="codeBlock prettyprint">
+student_height = 6.24
+print("before converting")
+print(height)
+print(type(height))
+      
+# from float to integer
+print("after converting")
+height = int(height)
+print(height)
+print(type(height))
+</pre>
+  </p>
+  <p>
+    <pre class="codeBlock prettyprint">
+height = 9.24
+print("before converting")
+print(height)
+print(type(height))
+      
+# from float to string
+print("after converting")
+height = str(height)
+print(height)
+print(type(height))
+    </pre>
+<pre class="codeBlock prettyprint">
+# from string to integer
+student_age = "16"
+print("before converting")
+print(student_age)
+print(type(student_age))
+      
+print("after converting")
+student_age = int(student_age)
+print(student_age)
+print(type(student_age))
+
+# from string to float
+height = "9.24"
+print("before converting")
+print(height)
+print(type(height))
+      
+print("after converting")
+height = float(height)
+print(height)
+print(type(height))
+</pre>
+  </p>
+  <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js"></script>
+</body>
+
+</html>
+<pre class="codeBlock prettyprint"></pre>
