@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Errors & Exceptions</title>
+    <link
+      rel="stylesheet"
+      href="../../Styles/prettify-small/google-code-prettify/prettify.css"
+    />
+    <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+  </head>
+
+  <body onload="PR.prettyPrint()">
+    <h1>Errors & Exceptions</h1>
+    <p><strong>Errors</strong></p>
+    <p>
+      <em><strong>Syntax Errors</strong></em>
+    </p>
+    <pre class="codeBlock prettyprint">
+if True
+    print("Thats True")
+</pre>
+<pre class="codeBlock prettyprint">
+print(Thats True)
+</pre>
+    <p>
+      <em><strong>Runtime Errors</strong></em>
+    </p>
+    <pre class="codeBlock prettyprint">
+a = 5
+b = 0
+c = a/b
+print(c)
+</pre
+    >
+    <p>
+      <em><strong>Logical Errors</strong></em>
+    </p>
+    <h2>Error Handling</h2>
+    <p>
+      <em><strong>Try</strong></em>
+    </p>
+<pre class="codeBlock prettyprint">
+try:
+    code that might be problematic
+</pre>
+example
+<pre class="codeBlock prettyprint">
+a = 5
+b = 0
+try:
+    c = a/b
+</pre>
+    <p>
+        <em><strong>Except</strong></em>
+      </p>
+<pre class="codeBlock prettyprint">
+a = 5
+b = 0
+try:
+    c = a/b
+except:
+    print("Error !")
+</pre>
+<p>catch specific errors</p>
+<pre class="codeBlock prettyprint">
+a = 5
+b = 0
+try:
+  c = a/b
+except ZeroDivisionError:
+  print("an error occured")
+</pre>
+Exception Class as an alias to get actual error from the Exception Class.
+<pre class="codeBlock prettyprint">
+a = 5
+b = 0
+try:
+    c = a/b
+except Exception as e:
+    print(e)
+</pre>
+    <p>
+      <em><strong>Else</strong></em>
+    </p>
+<pre class="codeBlock prettyprint">
+a = 5
+b = 2
+try:
+    c = a/b
+except Exception as e:
+    print(e)
+else:
+    print(c)
+</pre>
+    <p>
+      <em><strong>Raise</strong></em>
+    </p>
+    <p>
+      <em><strong>Finally</strong></em>
+    </p>
+    <script
+      type="text/javascript"
+      src="../../Styles/prettify-small/google-code-prettify/prettify.js"
+    ></script>
+  </body>
+</html>

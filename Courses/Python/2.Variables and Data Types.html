@@ -11,10 +11,13 @@
 
 <body onload="PR.prettyPrint()">
   <h2>Variables</h2>
-  <p><strong>Variables</strong> are used to store data in computer memory reasign a variable to a value of a different Data Type</p>
+  <p><strong>Variables</strong> are used to store data in computer memory reasign a variable to a value of a different
+    Data Type give Variables meaningful names eg <em><code class="code prettyprint">student_height</code></em> instead
+    of <em><code class="code prettyprint">sh </code></em> .</p>
   <h2>Primitive Data Types</h2>
   <p>
-    <strong>Primitive Data Types</strong> are predefined types of data. They are the most basic data types provided by a Programming Language. Python has four Primitive Data Types : <em> Integers , Floats , Boolean, Strings.</em>
+    <strong>Primitive Data Types</strong> are predefined types of data. They are the most basic data types provided by a
+    Programming Language. Python has four Primitive Data Types : <em> Integers , Floats , Boolean, Strings.</em>
   </p>
   <p>
     <strong>Integers</strong> are negative or positive whole numbers ...
@@ -40,7 +43,8 @@ is_sunny = False
   note the values start with capital letters.
   </p>
   <p>
-    <strong>Strings</strong> are a sequence of Characters.In Python, strings are delimited by either Single quotes('') or
+    <strong>Strings</strong> are a sequence of Characters.In Python, strings are delimited by either Single quotes('')
+    or
     Double quotes("").
   <pre class="codeBlock prettyprint">
 # single quotes
@@ -50,12 +54,14 @@ print(a_string)
 another_string ="eggs"
 print(another_string)
 </pre>
-  To display a string with quotes, use \ to escape quotes (or any special Characters). Alternatively to display double
-  quotes, use single quotes as delimiters and vice versa.
   </p>
   <h2>Type Conversion</h2>
   <p>
-    <pre class="codeBlock prettyprint">
+    A variable can be converted from one data type to another.Use the <code class="code prettyprint">type()</code>
+    function to check a varible's data type.
+  </p>
+  <p>Use the <code class="code prettyprint">float()</code> function to convert to a float. </p>
+  <pre class="codeBlock prettyprint">
 student_age = 16
 print("before converting")
 print(student_age)
@@ -67,9 +73,8 @@ student_age = float(student_age)
 print(student_age)
 print(type(student_age))
 </pre>
-  </p>
-  <p>
-    <pre class="codeBlock prettyprint">
+  <p>Use the <code class="code prettyprint">int()</code> function to convert to an integer.</p>
+  <pre class="codeBlock prettyprint">
 student_height = 6.24
 print("before converting")
 print(height)
@@ -81,9 +86,8 @@ height = int(height)
 print(height)
 print(type(height))
 </pre>
-  </p>
-  <p>
-    <pre class="codeBlock prettyprint">
+  <p>Use the <code class="code prettyprint">str()</code> function to convert to a string.</p>
+  <pre class="codeBlock prettyprint">
 height = 9.24
 print("before converting")
 print(height)
@@ -95,9 +99,12 @@ height = str(height)
 print(height)
 print(type(height))
     </pre>
-<pre class="codeBlock prettyprint">
+  <p>To convert a string to a number, it must be numeric. Use the <code class="prettyprint">isnumeric()</code> method to
+    check wether the characters in a string are numeric.</p>
+  <pre class="codeBlock prettyprint">
 # from string to integer
 student_age = "16"
+print(student_age.isnumeric())
 print("before converting")
 print(student_age)
 print(type(student_age))
@@ -108,19 +115,18 @@ print(student_age)
 print(type(student_age))
 
 # from string to float
-height = "9.24"
+student_height = "9.24"
+print(student_height.isnumeric())
 print("before converting")
-print(height)
-print(type(height))
+print(student_height)
+print(type(student_height))
       
 print("after converting")
-height = float(height)
-print(height)
-print(type(height))
+student_height = float(student_height)
+print(student_height)
+print(type(student_height))
 </pre>
-  </p>
   <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js"></script>
 </body>
 
 </html>
-<pre class="codeBlock prettyprint"></pre>

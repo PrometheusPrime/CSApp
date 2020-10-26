@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strings</title>
+  <link rel="stylesheet" href="../../Styles/prettify-small/google-code-prettify/prettify.css" />
+  <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+</head>
+
+<body onload="PR.prettyPrint()">
+  <h1>String</h1>
+  <p>A <em>String</em> is a sequence of characters (numbers , letters , spaces, et cetra)</p>
+  <pre class="codeBlock prettyprint">
+print("Hello World")
+</pre>
+<p>To display double quotes, use single quotes as delimiters and vice versa.Using the same quotes in a string as the ones you're using as delimiters will give you an error.</p>
+<pre class="codeBlock prettyprint">
+print('')
+print("")
+#print("")
+</pre>
+  <p>Use the Backslash (\) to escape quotes or any special Characters.</p>
+  <pre class="codeBlock prettyprint">
+print()
+</pre>
+  <p>
+    newline (\n)
+  </p>
+  <pre class="codeBlock prettyprint">
+print("Hello\nWorld")
+</pre>
+  <p>
+    Display preformated or multiline strings, use three single (''') or Double (""") quotes.
+  </p>
+  <pre class="codeBlock prettyprint">
+print('''The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.''')
+#The output will be exactly the way it was formated in the code
+</pre>
+  <h2>Operating On Strings</h2>
+  <p>
+    The Addition Operator (+) is used to join strings together. Numbers can not be added or combined with strings.
+  </p>
+  <pre class="codeBlock prettyprint">
+first_name = "Jane "
+last_name = "Doe"
+name = first_name + last_name
+print(name)
+</pre>
+  <p>
+    Strings can be multiplied by a number, the result is that string repeated n times . A string can not be multiplied
+    by another string.
+  </p>
+  <pre class="codeBlock prettyprint">
+i = "I"
+i_times_three = i * 3
+print(i_times_three)
+</pre>
+  <p>
+    The <code class="prettyprint">len()</code> function returns the length (number of characters) of a string.
+  </p>
+  <pre class="codeBlock prettyprint">
+first_name = "Jane"
+print(len(first_name))
+</pre>
+<p>The <code class="prettyprint">strip()</code> method removes whitespace from the beginning and / the end of a string.</p>
+<pre class="codeBlock prettyprint">
+first_name = " Jane "
+print("Number of characters before striping whitespace")
+print(len(first_name))
+first_name = first_name.strip()
+print("Number of characters after striping whitespace")
+print(len(first_name))
+</pre>
+<p>
+    The <code class="prettyprint">replace()</code> function returns the length (number of characters) of a string.
+  </p>
+  <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js"></script>
+</body>
+
+</html>

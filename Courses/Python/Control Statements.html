@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Statements</title>
+    <link rel="stylesheet" href="../../Styles/prettify-small/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+</head>
+
+<body onload="PR.prettyPrint()">
+    <h1>Control Statements</h1>
+    <p><strong>Control Statements</strong></p>
+    <p><em><strong>If Statements :</strong></em>
+    <pre class="codeBlock prettyprint">
+if condition:
+    code to be executed
+</pre>
+    Python uses Indentation to delimit a block of code.
+    </p>
+    Example
+    <pre class="codeBlock prettyprint">
+if True:
+    print("Thats True")
+</pre>
+    Chain conditions
+    <pre class="codeBlock prettyprint">
+is_cloudy = True
+is_raining = False
+if is_cloudy or is_raining:
+    print("You'll need an Amburrella ")
+</pre>
+    <pre class="codeBlock prettyprint">
+is_cloudy = True
+is_raining = False
+if is_cloudy and is_raining:
+    print("You'll need an Amburrella ")
+</pre>
+    <p><em><strong>Nested If Statements :</strong></em> If statements can be nested</p>
+    <pre class="codeBlock prettyprint">
+is_cloudy = True
+is_raining = True
+if is_cloudy:
+    if is_raining:
+        print("It is croudy and raining ,You need an Amburrella")
+</pre>
+    <pre class="codeBlock prettyprint">
+age = 22
+if age > 18:
+    if age <= 25:
+        print("You're between 18 and 25 years of age")
+</pre>
+    <p><em><strong>Else Statement :</strong></em>
+    <pre class="codeBlock prettyprint">
+is_red = False
+if is_red:
+    print("Stop")
+else:
+    print("Drive")
+</pre>
+<p><em><strong>Nested If Else Statements :</strong></em> If statements can be nested</p>
+    <p><em><strong>Else If Statement :</strong></em>
+<pre class="codeBlock prettyprint">
+name = input("What is your name ? ")
+gender = input("What is your gender ? ")
+if gender.lower() == "male":
+    print("Hello Mr " + name)
+elif gender.lower() == "female": 
+    print("Hello Ms " + name)   
+</pre>
+<pre class="codeBlock prettyprint">
+name = input("What is your name ? ")
+gender = input("What is your gender ? ")
+if gender.lower() == "male":
+    print("Hello Mr " + name)
+elif gender.lower() == "female": 
+    print("Hello Ms " + name) 
+else:
+    print("Hello " + name)
+</pre>
+    <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js"></script>
+</body>
+
+</html>
