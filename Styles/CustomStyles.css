@@ -5,12 +5,10 @@
   */
 * {
   box-sizing: border-box;
+}
+:root {
   font-size: 100%;
 }
-/* :root{
-  
-   
-} */
 body {
   background-color: #eceff1;
   line-height: 1.5;
@@ -39,7 +37,7 @@ hr {
 .code {
   /* pick a better color */
   /* background-color:azure; */
-  font-family:Consolas,"courier new";
+  font-family: Consolas, "courier new";
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 1rem;
   overflow: auto;
@@ -48,8 +46,10 @@ hr {
   color: #78909c;
 }
 .tip {
+  /* color: #fff !important; */
   /* pick a better color */
-  background-color: rgba(0, 100, 100, 0.15);
+  /* white #306998 black #ffe873 #ffd43b #5a9fd4 #264DE4 #7f7f7f */
+  background-color: #ffe873 !important;
   padding: 5px;
 }
 .tip > p {

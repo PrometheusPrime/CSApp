@@ -10,14 +10,14 @@
     />
     <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
   </head>
+
   <body onload="PR.prettyPrint()">
     <h1>Working With Text</h1>
     <p>
-      <strong>Headings :</strong> The H element is used to create headings in
-      HTML. HTML has 6 levels of headings (h1-h6),h1 is the most
+      <em><strong>Headings :</strong></em> The H element is used to create
+      headings in HTML. HTML has 6 levels of headings (h1-h6),h1 is the most
       important(largest) heading and h6 the least important(smallest).
     </p>
-    <p>h1 - h6</p>
     <pre class="codeBlock prettyprint">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -37,10 +37,9 @@
     >
     <img src="images/h1-h6.png" alt="h1 to h6 demo" />
     <p>
-      <strong>paragraphs : </strong>empty lines are automatically added before
-      and after the paragraph.
+      <em><strong>Paragraphs : </strong></em>The p element is used to create
+      paragraphs.
     </p>
-    <code class="code prettyprint"> &lt;p&gt;&lt;/p&gt;</code>
     <pre class="codeBlock prettyprint">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -48,13 +47,19 @@
    &lt;title&gt;Hello HTML&lt;/title&gt;
  &lt;/head&gt;
  &lt;body&gt;
+ This is not a paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, error!
    &lt;p&gt;This is a paragraph lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magnam, temporibus, impedit fugiat obcaecati sit earum nesciunt libero ab nam explicabo saepe culpa eaque! Ipsa sed accusamus dolorem incidunt maxime vitae rem sint corrupti pariatur voluptatibus itaque delectus nisi autem, tempore, sit veniam distinctio temporibus. Obcaecati cumque esse voluptatem sit
   &lt;/p&gt;
+  This is not a paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quod.
  &lt;/body&gt;
 &lt;/html&gt;
 </pre
     >
     <img src="images/p1.png" alt=" paragraph demo" />
+    <p>
+      Empty lines are automatically added before and after the paragraph and
+      extra white space is ignored by the browser.
+    </p>
     <pre class="codeBlock prettyprint">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -66,15 +71,19 @@
   This is a paragraph lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magnam, temporibus, impedit fugiat obcaecati sit earum nesciunt libero ab nam explicabo saepe culpa eaque! Ipsa sed accusamus dolorem incidunt maxime vitae rem sint corrupti pariatur voluptatibus itaque delectus nisi autem, tempore, sit veniam distinctio temporibus. Obcaecati cumque esse voluptatem sit
   &lt;/p&gt;
   &lt;p&gt;
-  This is another        paragraph, paragraphs start in the
-  new line, empty    lines are                  automatically added before and     after the paragraph and         extra white space
-      is    ignored by         the browser..
+  This is another        paragraph with       a lot     of whitespace, Lorem       ipsum dolor sit amet,               consectetur adipisicing               elit. Sit facilis      perferendis voluptate          ipsa         architecto, minima                  libero exercitationem quam, tempore, earum            laborum.            Incidunt dignissimos          ratione, aperiam vel quis           quasi dicta                ducimus odit numquam             neque ipsa repellat                      modi error praesentium                maxime autem sed                  quisquam quod velit, quibusdam       consequuntur culpa      amet! Exercitationem,         neque?
   &lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;
 </pre
     >
     <img src="images/p2.png" alt=" paragraph demo 2" />
+    <code class="code prettyprint"> &lt;address&gt;&lt;/address&gt;</code>
+    <p>
+      <em><strong>Quotes :</strong></em>
+    </p>
+    <code class="code prettyprint"> &lt;q&gt;&lt;/q&gt;</code>
+    <code class="code prettyprint"> &lt;blockquote&gt;&lt;/blockquote&gt;</code>
     <h2>Other Text Formating Elements</h2>
     <code class="code prettyprint"> &lt;b&gt;&lt;/b&gt;</code> Bold text<br />
     <code class="code prettyprint"> &lt;i&gt;&lt;/i&gt;</code>Italic text<br />
@@ -85,7 +94,7 @@
     <code class="code prettyprint"> &lt;mark&gt;&lt;/mark&gt;</code> Marked
     text<br />
     <code class="code prettyprint"> &lt;bdo&gt;&lt;/bdo&gt;</code>
-    Bi-Directional Override<br />
+    Bi-Directional Override overrides the current text direction.<br />
     <code class="code prettyprint"> &lt;abbr&gt;&lt;/abbr&gt;</code
     >Abbreviation<br />
     <code class="code prettyprint"> &lt;small&gt;&lt;/small&gt;</code> Small
@@ -99,6 +108,7 @@
     >Subscript<br />
     <code class="code prettyprint"> &lt;sup&gt;&lt;/sup&gt;</code
     >Superscript<br />
+    <code class="code prettyprint"> &lt;kbd&gt;&lt;/kbd&gt;</code>Code<br />
     <code class="code prettyprint"> &lt;code&gt;&lt;/code&gt;</code>Code<br />
     <code class="code prettyprint"> &lt;pre&gt;&lt;/pre&gt;</code>Pre<br />
     <script

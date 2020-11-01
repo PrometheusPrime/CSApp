@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styles</title>
+  <link rel="stylesheet" href="../../Styles/prettify-small/google-code-prettify/prettify.css" />
+  <link rel="stylesheet" href="../../Styles/CustomStyles.css" />
+</head>
+
+<body onload="PR.prettyPrint()">
+  <h1>Styles</h1>
+  <p><strong>Styles</strong> are used to control the way the HTML Document is presented( text color, background color
+    ,font type, et cetra).</p>
+  <h2>Inline Styles</h2>
+  <p>The <em><strong>Style Attribute</strong></em> is used to change the style of an HTML element. It has the following
+    syntax :
+  <pre class="code prettyprint ">style = "property:value;" </pre>the property is what you want to change on an element.
+  </p>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style = "color:aquamarine;"&gt;
+    This is a paragraph.
+    &lt;/p&gt;
+    &lt;p style = "color:teal;"&gt;
+    This is another paragraph.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <p>You can add multiple styles on an element.</p>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body style="background-color:#7f7f7f;"&gt;
+    &lt;h1 style="text-align:center;color:rgb(255,255,255);"&gt;Hello There !!&lt;/h1&gt;
+    &lt;p style="color:aqua;font-family:'Times New Roman';font-size:40px;"&gt;
+    This is a paragraph.
+    &lt;/p&gt;
+    &lt;p style="color:aquamarine;font-family:verdana;font-size:30px;"&gt;
+    This is another paragraph.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <p>Adding styles to an element with the style attribute is called <em><strong>Inline Styling.</strong></em></p>
+  <h2>Internal/Embeded Styles</h2>
+  <p>You can also style an HTML Document with the <code class="code prettyprint">&lt;style&gt;</code> element. The style
+    element is nested inside the head element. Styling an HTML Document with the style element is called
+    <em><strong>Internal Styling.</strong></em> It follows the following syntax :</p>
+  <pre class="code prettyprint ">&lt;style&gt;
+selector {property:value;}
+&lt;/style&gt;
+</pre>
+  The selector is the HTML element you want to style , property:value; is called Declaration.
+  </p>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+    &lt;title&gt;Hello HTML&lt;/title&gt;
+    &lt;style&gt;
+    body{background-color: darkgrey;}
+    h1{text-align:center;font-family:'Times New Roman';color:darkcyan;}
+    p{color:aquamarine;font-family:verdana;}
+    &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h1&gt;
+  This is a Heading.
+  &lt;/h1&gt;
+  &lt;p&gt;
+  This is a paragraph.
+  &lt;/p&gt;
+  &lt;p&gt;
+  This is another paragraph.
+  &lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <p>You can add same styles to multiple elements by comma seperating each selector.</p>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Hello HTML&lt;/title&gt;
+ &lt;style&gt;
+ h1,h2{
+   text-align:center;
+   font-family:'Times New Roman';
+   color:darkcyan;}
+ &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt;
+ This is a Heading.
+ &lt;/h1&gt;
+ &lt;p&gt;
+ This is a paragraph.
+ &lt;/p&gt;
+ &lt;h2&gt;
+ This is another Heading.
+ &lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <h2>Class and Id Selectors</h2>
+  <p>The <em><strong>Class Selector</strong></em> is used to style a specific element(s).A class can be used as many
+    times as needed,on any number of elements. Use the class attribute to add a class to an element.To select an
+    element(s) with a class, use the period (.) character, then follow it with the class name. A class name cannot start
+    with a number.</p>
+  <pre class="code prettyprint ">&lt;element class="className"&gt;&lt;/element&gt;</pre>
+  <p>An element can belong to multiple classes, seperate the classes with a space.</p>
+  <pre class="code prettyprint ">&lt;element class="classA classB"&gt;&lt;/element&gt;</pre>
+  <p>The <em><strong>Id Selector</strong></em> is used to style a specific element.An id is used only once per page ,it
+    is used to select one unique element. Use the id attribute to add an id to an element. To select an element with an
+    id, use the hash (#) character, then follow it with the id. An id name cannot start with a number.</p>
+  <pre class="code prettyprint ">&lt;element id="idName"&gt;&lt;/element&gt;</pre>
+  <h4>Class and Id Selectors Example</h4>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+   &lt;title&gt;Hello HTML&lt;/title&gt;
+   &lt;style&gt;
+    .myClass{
+     text-align:center;
+     font-family:'Times New Roman';
+     color:darkcyan;}
+     #myId{
+      color:darkslategray;font-family:verdana;}
+   &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+   &lt;h1 class="myClass"&gt;
+   This is a Heading with Class.
+   &lt;/h1&gt;
+   &lt;p id="myId"&gt;
+   This is a paragraph with an Id.
+   &lt;/p&gt;
+   &lt;p class="myClass"&gt;
+   This is paragraph with Class.
+   &lt;/p&gt;
+   &lt;p&gt;
+   This is another paragraph.
+   &lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <h2>Inheritance</h2>
+  <p>A child element will inherit styles from its parent(an element in which the child element is nested in).Applying
+    styles to a child element will overwrite the inherited ones,the most specific style rule will be applied to an
+    element.</p>
+  <pre class="code prettyprint ">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello HTML&lt;/title&gt;
+    &lt;style&gt;
+      body{
+       color:#7f7f7f;}
+     h1{
+       text-align:center;
+       font-family:'Times New Roman';
+       color:darkcyan;}
+      #myId{darkseagreen
+       color:darkseagreen;font-family:verdana;}
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;
+    This is a Heading with specific styles.
+    &lt;/h1&gt;
+    &lt;p&gt;
+    This paragraph is inheriting from parent.
+    &lt;/p&gt;
+    &lt;h2&gt;
+    This Heading is inheriting from parent.
+    &lt;/h2&gt;
+    &lt;p id="myId"&gt;
+    This is a paragraph with specific styles.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <script type="text/javascript" src="../../Styles/prettify-small/google-code-prettify/prettify.js"></script>
+</body>
+
+</html>
